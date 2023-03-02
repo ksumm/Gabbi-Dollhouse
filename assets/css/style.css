@@ -43,6 +43,41 @@ h1 {
   letter-spacing: 0.1rem;
 }
 
+.start {
+  color:  rgba(46,27,48, 0.9);
+  background-color: rgba(229, 183, 103);
+  border-radius: 1.6rem;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.03rem;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.control-area li {
+  list-style-type: none;
+  text-align: center;
+  clear: both;
+}
+
+.score {
+  float: right;
+  margin-bottom: 2rem;
+}
+
+
+a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rules {
+  text-decoration: none;
+}
+
 
 
 
