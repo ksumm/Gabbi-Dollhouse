@@ -89,8 +89,7 @@ a {
 .tile{
   position: relative;
   transform-style: preserve-3d;
-  transition: all 2s ease;
-  transform: rotateY(0deg);
+  transition: all 0.5s ease;
 }
 
 .face, 
@@ -99,6 +98,7 @@ a {
   height: 100%;
   border-radius: 0.5rem;
   position: absolute;
+  pointer-events: none;
 }
 
 .back {
@@ -107,6 +107,10 @@ a {
   background-position: center center;
   background-size: cover;
   backface-visibility: hidden;
+}
+
+.toggleTile{
+  transform: rotateY(180deg);
 }
 
 

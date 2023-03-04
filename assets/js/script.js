@@ -37,7 +37,7 @@ const tileGenerator = () => {
   const tileData = randomize();
 
 //Generate the HTML
-tileData.forEach(item => {
+tileData.forEach((item) => {
   const tile = document.createElement('div');
   const face = document.createElement('img');
   const back = document.createElement('div');
@@ -48,15 +48,46 @@ tileData.forEach(item => {
 //Attach the info to the tiles
 
 face.src = item.image;
+tile.setAttribute('name', item.name);
+
 
 //Attach the tiles to the game-container
 let section = document.getElementById("section");
-section.appendChild(tile);
-tile.appendChild(face);
-tile.appendChild(back);
-});
+  section.appendChild(tile);
+  tile.appendChild(face);
+  tile.appendChild(back);
+  tile.addEventListener('click', (e) => {
+     tile.classList.toggle("toggleTile");
+     checkTiles(e);
+    });
+  });
+};
 
+//Check Tiles Match
 
+const checkTiles = (e) => {
+  console.log(e);
+  const clickedTile = e.target;
+  const flippedTiles = document.querySelectorAll(".flipped");
+  clickedTile.classList.add("flipped");
+  if(flippedTiles.length === 2){
+    if(
+      flippedTiles[0].getAttribute('name') === 
+      flippedTiles[1].getAttribute('name')
+      ) {
+      console.log("You get it!");
+      flippedTiles.forEach((tile) => {
+        tile.classList.remove("flipped");
+        tile.style.pointerEvents = 'none';
+      });
+    } else {
+      console.log("Try again!");
+      flippedTiles.forEach((tile) => {
+        tile.classList.remove("flipped");
+        setTimeout(() => tile.classList.remove("toggleTile"), 500);
+     });
+    }
+  }
 };
 
 tileGenerator();
