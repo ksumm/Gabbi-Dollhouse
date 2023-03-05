@@ -1,8 +1,5 @@
 const section = document.querySelector("section");
 
-
-
-
 // Create tiles array
 
 const getData = () => [{name: "boxkitty", image: "./assets/images/boxkitty.png"},
@@ -22,7 +19,6 @@ const getData = () => [{name: "boxkitty", image: "./assets/images/boxkitty.png"}
   {name: "pandypaws", image: "./assets/images/pandypaws.png"}, 
   {name: "pillowcat", image: "./assets/images/pillowcat.png"} ];
 
-
 //Randomize tiles
 
 const randomize = () => {
@@ -31,12 +27,15 @@ const randomize = () => {
   return tileData;
 };
 
+randomize();
+
 //Generate tiles function 
 
 const tileGenerator = () => {
   const tileData = randomize();
 
 //Generate the HTML
+
 tileData.forEach((item) => {
   const tile = document.createElement('div');
   const face = document.createElement('img');
@@ -52,8 +51,8 @@ tile.setAttribute('name', item.name);
 
 
 //Attach the tiles to the game-container
-let section = document.getElementById("section");
-  section.appendChild(tile);
+let game = document.getElementById("game");
+  game.appendChild(tile);
   tile.appendChild(face);
   tile.appendChild(back);
   tile.addEventListener('click', (e) => {
@@ -66,31 +65,66 @@ let section = document.getElementById("section");
 //Check Tiles Match
 
 const checkTiles = (e) => {
-  console.log(e);
   const clickedTile = e.target;
-  const flippedTiles = document.querySelectorAll(".flipped");
   clickedTile.classList.add("flipped");
+  const flippedTiles = document.querySelectorAll(".flipped");
+
   if(flippedTiles.length === 2){
+
     if(
-      flippedTiles[0].getAttribute('name') === 
-      flippedTiles[1].getAttribute('name')
+      flippedTiles[0].getAttribute("name") === 
+      flippedTiles[1].getAttribute("name")
       ) {
-      console.log("You get it!");
+      
       flippedTiles.forEach((tile) => {
+
         tile.classList.remove("flipped");
         tile.style.pointerEvents = 'none';
+      
       });
+
     } else {
-      console.log("Try again!");
+      
       flippedTiles.forEach((tile) => {
+
         tile.classList.remove("flipped");
-        setTimeout(() => tile.classList.remove("toggleTile"), 500);
+        setTimeout(() => tile.classList.remove("toggleTile"), 900);
+
      });
     }
+    addMove();
   }
 };
 
+//Start New Game function
+
+const startButton = document.querySelector(".start");
+
+startButton.addEventListener("click", () => {
+  scoreContainer.innerHTML = 0;
+  moves = 0;
+  game.innerHTML = '';
+  tileGenerator();
+});
+
 tileGenerator();
+
+//Score count function
+
+let scoreContainer = document.getElementById("moves");
+
+let moves = 0;
+scoreContainer.innerHTML = 0;
+console.log(scoreContainer);
+
+function addMove() {
+  moves++;
+  scoreContainer.innerHTML = moves;
+}
+
+
+
+
 
 
 
