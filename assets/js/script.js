@@ -59,6 +59,9 @@ let game = document.getElementById("game");
      tile.classList.toggle("toggleTile");
      checkTiles(e);
     });
+  tile.addEventListener('click', (e) => {
+    document.getElementById('sound').play(); // gets element with id 'sound' and plays the audio file
+  })  
   });
 };
 
@@ -68,6 +71,7 @@ const checkTiles = (e) => {
   const clickedTile = e.target;
   clickedTile.classList.add("flipped");
   const flippedTiles = document.querySelectorAll(".flipped");
+  
 
   if(flippedTiles.length === 2){
 
@@ -80,8 +84,9 @@ const checkTiles = (e) => {
 
         tile.classList.remove("flipped");
         tile.style.pointerEvents = 'none';
-      
+        document.getElementById('success').play(); // gets element with id 'success' and plays the audio file
       });
+     
 
     } else {
       
