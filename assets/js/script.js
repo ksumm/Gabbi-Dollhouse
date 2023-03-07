@@ -50,7 +50,7 @@ face.src = item.image;
 tile.setAttribute('name', item.name);
 
 
-//Attach the tiles to the game-container
+//Attach the tiles to the game-container - initial code was taken from: https://www.youtube.com/watch?v=-tlb4tv4mC4 and adapted
 let game = document.getElementById("game");
   game.appendChild(tile);
   tile.appendChild(face);
@@ -62,7 +62,7 @@ let game = document.getElementById("game");
   });
 };
 
-//Check Tiles Match
+//Check Tiles Match - initial code was taken from: https://www.youtube.com/watch?v=-tlb4tv4mC4 and adapted
 
 const checkTiles = (e) => {
   const clickedTile = e.target;
@@ -121,6 +121,17 @@ function addMove() {
   moves++;
   scoreContainer.innerHTML = moves;
 }
+
+// How to play
+
+document.getElementById("rules-link").addEventListener("click", function(){
+  document.querySelector(".rules-container").style.display="block";
+}
+);
+
+document.querySelector(".lets-go").addEventListener('click', function(){
+  document.querySelector(".rules-container").style.display="none";
+});
 
 
 
