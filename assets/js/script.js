@@ -1,4 +1,5 @@
 const section = document.querySelector("section");
+let perfectMatch = 0;
 
 // Create tiles array
 
@@ -84,6 +85,8 @@ const checkTiles = (e) => {
 
         tile.classList.remove("flipped");
         tile.style.pointerEvents = 'none';
+        perfectMatch += 1;
+        console.log(perfectMatch);
         document.getElementById('success').play(); // gets element with id 'success' and plays the audio file
       });
      
@@ -98,6 +101,12 @@ const checkTiles = (e) => {
      });
     }
     addMove();
+
+    if(perfectMatch === 16){ //
+      document.querySelector(".win").style.display = "block";
+      document.getElementById('winner').play();
+
+    }
   }
 };
 
@@ -113,6 +122,16 @@ startButton.addEventListener("click", () => {
 });
 
 tileGenerator();
+
+const newGameButton = document.querySelector(".new-game");
+
+newGameButton.addEventListener("click", () => {
+  document.querySelector(".win").style.display="none";
+  scoreContainer.innerHTML = 0;
+  moves = 0;
+  game.innerHTML = '';
+  tileGenerator();
+});
 
 //Score count function
 
