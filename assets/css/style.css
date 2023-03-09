@@ -229,7 +229,34 @@ and (max-width:800px){
   }
 }
 
+/* For medium screen sizes */
 
+@media only screen and (min-width: 820px)
+and (max-width:1400px){
+  body {
+    background-image: url('../images/background_mobile.jpg');
+    background-position: 5%; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .wrapper {
+    margin: 2rem auto;
+    width: 75%;
+    padding: 1em;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    width: 75%;
+  }
+
+  .rules-container {
+    width: 75%;
+  }
+}
 
 
 
