@@ -185,7 +185,7 @@ and (max-width:800px){
 
   .wrapper {
     margin: 2rem auto;
-    width: 75%;
+    width: 90%;
     padding: 1em;
   }
 
@@ -195,13 +195,13 @@ and (max-width:800px){
 
   h1 {
     font-size: 0.75rem;
-    width: 75%;
+    width: 90%;
   }
 
   .game-container {
     display: grid;
-    grid-template-columns: repeat(4,3.5rem);
-    grid-template-rows: repeat(4,3.5rem);
+    grid-template-columns: repeat(4,4.5rem);
+    grid-template-rows: repeat(4,4.5rem);
     grid-gap: 0.5rem;
     perspective: 800px;
   }
@@ -217,7 +217,7 @@ and (max-width:800px){
   }
 
   .rules-container {
-    width: 75%;
+    width: 90%;
   }
 
   button.lets-go {
