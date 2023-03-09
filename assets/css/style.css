@@ -53,6 +53,7 @@ h1 {
   letter-spacing: 0.03rem;
   display: flex;
   margin: 0 auto;
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -69,8 +70,8 @@ h1 {
 }
 
 .score {
-  float: right;
   margin-bottom: 2rem;
+  display: flex;
 }
 
 .game-container {
@@ -110,6 +111,7 @@ h1 {
 }
 
 /* How to play section */
+
 button.rules {
   background-color: transparent;
   box-shadow: none;
@@ -166,28 +168,64 @@ color: aliceblue;
 }
 
 
+/* Media queries */
+
+/* For small screen sizes */
 
 @media only screen and (min-width: 320px)
-and (max-width:1180px){
+and (max-width:800px){
   body {
-    background-image: url('../images/background_mobile.jpg'); 
-    background-position: center center;
+    background-image: url('../images/background_mobile.jpg');
+    background-position: 5%; 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
   }
 
+  .wrapper {
+    margin: 2rem auto;
+    width: 75%;
+    padding: 1em;
+  }
+
+  .score{
+    font-size: 0.5rem;
+  }
+
   h1 {
-    font-size: 1.5rem;
+    font-size: 0.75rem;
+    width: 75%;
   }
 
   .game-container {
     display: grid;
-    grid-template-columns: repeat(4,2.8rem);
-    grid-template-rows: repeat(4,2.8rem);
+    grid-template-columns: repeat(4,3.5rem);
+    grid-template-rows: repeat(4,3.5rem);
     grid-gap: 0.5rem;
-    perspective: 400px;
+    perspective: 800px;
+  }
+
+  .start {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  button.rules {
+    font-size: 0.5rem;
+  }
+
+  .rules-container {
+    width: 75%;
+  }
+
+  button.lets-go {
+    font-size: 0.5rem;
+  }
+
+  .rules-container h1 {
+    font-size: 1rem;
   }
 }
 
