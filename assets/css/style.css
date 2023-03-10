@@ -182,7 +182,11 @@ color: aliceblue;
   background-color: rgba(229, 183, 103);
 }
 
-
+a#error {
+  background-color: rgba(46,27,48, 0.9);
+  font-family: 'Londrina Shadow', sans-serif;
+  text-decoration: none;
+}
 
 
 /* Media queries */
