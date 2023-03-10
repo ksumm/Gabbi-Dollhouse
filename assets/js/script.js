@@ -157,6 +157,21 @@ document.querySelector(".lets-go").addEventListener('click', function(){
   document.querySelector(".rules-container").style.display="none";
 });
 
+//Sound Off
+
+  function soundOff() {
+
+  let control = document.querySelector(".sound-control");
+  control.addEventListener('click', soundOff());
+
+    document.getElementById('winner').pause();
+    document.getElementById('success').pause();
+    document.getElementById('sound').pause();
+  }
+
+ 
+
+
 
 
 
