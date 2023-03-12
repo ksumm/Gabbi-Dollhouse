@@ -9,7 +9,7 @@
 </head>
 <body>
   <section id="main-section">
-    <h1>Gabby's Dollhouse Memory Game</h1>
+    <h1>Gabby's Dollhouse Memory Game </h1>
     <div class="wrapper">
       <div class="score">score:
         <span id="moves">0</span>
@@ -18,13 +18,13 @@
       <div class="control-area">
         <ul>
           <li>
-            <button class = "start">start game</button>
+            <button class = "start">reset game</button>
           </li>
           <li>
             <button class = "rules" id = "rules-link">how to play</button>
           </li>
           <li>
-            <button class="sound-control">Sound Off</button>
+            <button class="control" onClick  = togglePlay()>Gabby's Winner Song Off/On</button>
           </li>
         </ul>
       </div>
@@ -60,9 +60,9 @@
 
 <!-- Audio --> 
 
-<audio id="success" src="assets/audio/success.mp3" preload="auto"></audio>
-<audio id="sound" src="assets/audio/clicking.mp3" preload="auto"></audio>
-<audio id="winner" src="assets/audio/winner.mp3" preload="auto"></audio>
+<audio  id="success" src="assets/audio/success.mp3" volume = 0.4></audio>
+<audio  id="sound" src="assets/audio/clicking.mp3" ></audio>
+<audio  id="winner" src="assets/audio/winner.mp3" ></audio>
 
 <script src="assets/js/script.js"></script>  
 </body>

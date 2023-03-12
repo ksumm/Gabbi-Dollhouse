@@ -159,15 +159,34 @@ document.querySelector(".lets-go").addEventListener('click', function(){
 
 //Sound Off
 
-  function soundOff() {
+  let winner = document.getElementById("winner");
+  let isPlaying = true;
+  winner.volume = 0.4;
 
-  let control = document.querySelector(".sound-control");
-  control.addEventListener('click', soundOff());
 
-    document.getElementById('winner').pause();
-    document.getElementById('success').pause();
-    document.getElementById('sound').pause();
-  }
+  function togglePlay() {
+    isPlaying ? winner.pause() : winner.play();
+  };
+    
+  winner.onplaying = function() {
+    isPlaying = true;
+  };
+  
+  winner.onpause = function() {
+    isPlaying = false;
+  };
+
+ 
+
+  
+
+  
+  
+
+
+  
+
+
 
  
 

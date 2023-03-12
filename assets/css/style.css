@@ -112,14 +112,16 @@ h1 {
 
 /* How to play section */
 
-button.rules {
+button.rules , button.control {
   background-color: transparent;
   box-shadow: none;
   border: none;
   cursor: pointer;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
 }
 
-button.rules:hover{
+button.rules:hover, button.control:hover {
 color: aliceblue;
 }
 
@@ -166,7 +168,6 @@ color: aliceblue;
   margin-bottom: 2rem;
   cursor: pointer;
 }
-
 
 /*Win the Game*/
 
@@ -227,13 +228,13 @@ and (max-width:800px){
     perspective: 800px;
   }
 
-  .start {
+  .start, .control {
     font-size: 0.7rem;
     padding: 0.4rem 0.8rem;
     margin-bottom: 0.75rem;
   }
 
-  button.rules {
+  button.rules, button.control {
     font-size: 0.5rem;
   }
 
