@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!--META TAGS-->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content = "Gabby's dollhouse: memory game for kids.">
+  <meta name="keywords" content="game, memory game, kids, children, gabby's dollhouse">
+
+  <!--STYLESHEET-->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--FAVICON-->
   <link rel="icon" type = "image/x-icon" href = "assets/images/favicon.ico">
   <title>Gabby's Dollhouse Memory Game</title>
 </head>
 <body>
-  <section id="main-section">
+  <!--HEADER-->
+  <header>
     <h1>Gabby's Dollhouse Memory Game </h1>
+  </header>  
+
+  <!--MAIN SECTION-->
+  <section id="main-section">
+
+  <!--Game Section-->
+    <section id = "game-section">
     <div class="wrapper">
+
+      <!--div class where is the score will be counted-->
       <div class="score">score:
         <span id="moves">0</span>
       </div>
+
+      <!--container where is the game will be loaded-->
       <div class="game-container" id ="game"></div>
+
+      <!--div class with the buttons to control the game-->
       <div class="control-area">
         <ul>
           <li>
@@ -30,7 +52,12 @@
         </ul>
       </div>
     </div>
+    </section>
 
+    <!--Pop-up windows section-->
+    <section id="pop-up">
+
+    <!--div container with rules-->  
     <div class="rules-container">
       <h1>How to play:</h1>
       <ul>
@@ -50,21 +77,36 @@
       <button class="lets-go">lets go!</button>
     </div>
 
-    <div class="win">
+    <!--div class for win message-->
+    <div class="win"> 
      <h1>You Win!
       <br>
        <button class = "new-game">New Game</button>
       </h1>
     </div>
+    </section>
 
   </section>
 
-<!-- Audio --> 
+  <!--FOOTER-->
+  <footer>
+     <p>Gabby's Dollhouse Memory Game</p>
+     <p>Website developed in educational purpose by Oksana Mashyntseva as a part of the Code Institute Diploma in Full Stack Software Development</p>
+     <div id="footer-link">
+      <a href="https://github.com/ksumm" target="_blank" rel="noopener" aria-label="Link to the GitHub Page"><i class="fa-brands fa-github"></i></a>
+     </div>
+  </footer>
 
-<audio  id="success" src="assets/audio/success.mp3" volume = 0.4></audio>
-<audio  id="sound" src="assets/audio/clicking.mp3" ></audio>
-<audio  id="winner" src="assets/audio/winner.mp3" ></audio>
+  <!-- Font awesome script -->
 
-<script src="assets/js/script.js"></script>  
+  <script src="https://kit.fontawesome.com/52490d5333.js" crossorigin="anonymous"></script>  
+
+  <!-- Audio --> 
+
+  <audio  id="success" src="assets/audio/success.mp3" volume = 0.4></audio>
+  <audio  id="sound" src="assets/audio/clicking.mp3" ></audio>
+  <audio  id="winner" src="assets/audio/winner.mp3" ></audio>
+
+  <script src="assets/js/script.js"></script>  
 </body>
 </html>
