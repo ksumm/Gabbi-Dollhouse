@@ -1,108 +1,193 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Gabby's Dollhouse Memory Game 😻 🐈
+## 🔗 [View the live project here.](https://ksumm.github.io/gabby-dollhouse/)
+![Am I Responsive](assets/docs/mockup.png)
+Gabby's Dollhouse Memory Game is a classic game for kids who are fascinated by the Dreamwork cartoon Gabby's Dollhouse. Sixteen tiles make up a total of eight pairs of multiple cartoon heroes. Using cognitive memory skills, player need to find all eight matches by turning two tiles in one moove.
 
-Welcome USER_NAME,
+## User Stories
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+- As a user, I want to definitely understand the main purpose about the site.
+- As a user, I want to easily navigate the site.
+- As a user, I want this website to be responsive to my device.
+- As a user, I want to read the rules of the game.
+- As a user, I want to see my score.
+- As a user, I want to select hear the sound if I click on tiles.
+- As a user, I want to select hear success sound if I found matching tiles.
+- As a user, I want to see the congratulations message when I win the game.
+- As a user, I would be extremly happy to hear the winner Gabby's song when I win the game 👯‍♀️ . 
+- As a user, I want to pause the winner Gabby's song. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Technologies Used:
 
-## Gitpod Reminders
+### Languages
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+-   [Java Script](https://en.wikipedia.org/wiki/JavaScript#Trademark)
 
-`python3 -m http.server`
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
-A blue button should appear to click: _Make Public_,
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
-Another blue button should appear to click: _Open Browser_.
+### Frameworks, Libraries & Programs Used
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+-   [Canva](https://www.canva.com)
+     
+    - Canva was used to create the wireframes and logo.
 
-A blue button should appear to click: _Make Public_,
+-  [Font Awesome](https://fontawesome.com/icons) 
 
-Another blue button should appear to click: _Open Browser_.
+    - Font Awesome icons was used in creating the content of the site.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+-   [Google Fonts](https://fonts.google.com/)    
 
-To log into the Heroku toolbelt CLI:
+    - The Google Fonts was used:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+        - [Londrina Shadow](https://fonts.google.com/specimen/Londrina+Shadow?query=londrina+shadow)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+        - [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans#styles)
 
-------
+- GitHub Pages
 
-## Release History
+    - This project was deployed on GitHub pages.
+    
+- [Imagecolorpicker](https://imagecolorpicker.com)  
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+   Imagecolorpicker was used to choose the colour scheme. 
+   
+## Design
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Colour Scheme
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+The colour scheme was choosen using the [Imagecolorpicker](https://imagecolorpicker.com) 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![Color scheme](assets/docs/color-palette.png)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### The main colors used:
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- rgba(229, 183, 103)
+- rgba(46,27,48)
+- white
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Wireframes
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- Wireframes were created in [Canva](https://www.canva.com)
+- ![Start page](assets/docs/start_game.png)
+- ![Win game](assets/docs/new_game.png)
+- ![How to play](assets/docs/how_to_play.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Features
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Background with "Gabby's Dollhouse" cartoon heroes
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+In project I used two background images for landscage and portrait mode to make heroes of the cartoon be completly visible.
+![Landscape](assets/docs/bg_landscape.jpg)
+![Portrait](assets/docs/bg_portrait.jpg)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Gameboard
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The responsive gameboard, which includes 16 cards, is filled in the shape of a square. Each card flips 180° when pressed.
+![Gameboard](assets/docs/gameboard.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Sound is playing when tile is flipped
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+A clicking sound is playing if the tile is clicked.
 
-------
+### Sound is playing when user found a match
 
-## FAQ about the uptime script
+A matching sound is playing when the user has found a match.
 
-**Why have you added this script?**
+### The score section
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Every two tiles flipped - counted as a one move. The goal is to find mathching pairs as fever moves as possible.
 
-**How will this affect me?**
+### The Reset Game button
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+The Reset Game button is reloading the game if user for any reason wants to play a new game.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### The Gabby's winner song OFF/ON button
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+The Gabby's winner song OFF/ON button allows you to pause and resume playback the winner.mp3 audio file.
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Features left to implement
 
-**Can I opt out?**
+In future plans I intend to develop two features:
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### The Sound level control button
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+This button will allow user to control the volume level of all the sounds.
 
-**Anything more?**
+### The All Sounds ON/OFF button
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+This button will allow user to fully switch the sound OFF or ON in the game.
 
----
+### The High Score function
 
-Happy coding!
+This function will check all scores rounds played and return the lowest one.
+
+
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+
+5. The page will automatically refresh.
+
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the 
+
+original repository by using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+
+3. You should now have a copy of the original repository in your GitHub account.
+
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+
+2. Under the repository name, click "Clone or download".
+
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+
+4. Open Git Bash
+
+5. Change the current working directory to the location where you want the cloned directory to be made.
+
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+7. Press Enter. Your local clone will be created.
+
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+> Cloning into `CI-Clone`...
+
+> remote: Counting objects: 10, done.
+
+> remote: Compressing objects: 100% (8/8), done.
+
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+
+> Unpacking objects: 100% (10/10), done.
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+   
