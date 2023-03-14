@@ -1,4 +1,4 @@
-const section = document.querySelector("section");
+
 let perfectMatch = 0;
 
 // Create tiles array
@@ -62,7 +62,7 @@ let game = document.getElementById("game");
     });
   tile.addEventListener('click', (e) => {
     document.getElementById('sound').play(); // gets element with id 'sound' and plays the audio file
-  })  
+  });  
   });
 };
 
@@ -112,6 +112,7 @@ const checkTiles = (e) => {
 
 //Start New Game function
 
+let game = document.getElementById("game");
 const startButton = document.querySelector(".start");
 
 startButton.addEventListener("click", () => {
@@ -166,7 +167,7 @@ document.querySelector(".lets-go").addEventListener('click', function(){
 
   function togglePlay() {
     isPlaying ? winner.pause() : winner.play();
-  };
+  }
     
   winner.onplaying = function() {
     isPlaying = true;
