@@ -77,7 +77,8 @@ The colour scheme was choosen using the [Imagecolorpicker](https://imagecolorpic
 
 ### Background with "Gabby's Dollhouse" cartoon heroes
 
-In project I used two background images for landscage and portrait mode to make heroes of the cartoon be completly visible.
+In this project I used two types of background images for landscape and portrait mode to consider heroes of the cartoon visible completely. 
+
 ![Landscape](assets/docs/bg_landscape.jpg)
 ![Portrait](assets/docs/bg_portrait.jpg)
 
@@ -97,31 +98,30 @@ A matching sound is playing when the user has found a match.
 ### The score section
 
 Every two tiles flipped - counted as a one move. The goal is to find mathching pairs as fever moves as possible.
+![Score](assets/docs/score.png)
 
 ### The Reset Game button
 
 The Reset Game button is reloading the game if user for any reason wants to play a new game.
+![Reset](assets/docs/reset.png)
 
 ### The Gabby's winner song OFF/ON button
 
 The Gabby's winner song OFF/ON button allows you to pause and resume playback the winner.mp3 audio file.
-
+![Winner](assets/docs/winner_control.png)
 
 ## Features left to implement
 
-In future plans I intend to develop two features:
+In future plans I intend to develop:
 
 ### The Sound level control button
-
-This button will allow user to control the volume level of all the sounds.
+- This button will allow user to control the volume level of all the sounds.
 
 ### The All Sounds ON/OFF button
-
-This button will allow user to fully switch the sound OFF or ON in the game.
+- This button will allow user to fully switch the sound OFF or ON in the game.
 
 ### The High Score function
-
-This function will check all scores rounds played and return the lowest one.
+- This function will check all scores rounds played and return the lowest one.
 
 
 ## Deployment
@@ -134,7 +134,7 @@ The project was deployed to GitHub Pages using the following steps:
 
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
 
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 
 
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 
@@ -192,7 +192,16 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ## Credits
 
-### Images 
+### Images and Audio 
+
+- In educational purpose only all images and winner.mp3 audio were taken from Dreamworks [Dreamworks](https://www.dreamworks.com/shows/gabbys-dollhouse#printables). Images were modified in [Canva](https://www.canva.com) and [Procreate](https://procreate.com).
+- For cropping and resizing images I used [Img2Go](https://www.img2go.com).
+- Audio files were taken from [Pixaby](https://pixabay.com/sound-effects/search/clicks/). 
+
+### Code used
+
+- to understand how to write the code to attach tiles to game-container and to check tiles match function I used information from this video tutorial: [Youtube](https://www.youtube.com/watch?v=-tlb4tv4mC4).
+- to understand how to stop the sound, this article was used: [Stackoverflow](https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link).
 
 
 ### Acknowlegments
