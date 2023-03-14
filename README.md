@@ -14,44 +14,8 @@ Gabby's Dollhouse Memory Game is a classic game for kids who are fascinated by t
 - As a user, I want to select hear success sound if I found matching tiles.
 - As a user, I want to see the congratulations message when I win the game.
 - As a user, I would be extremly happy to hear the winner Gabby's song when I win the game 👯‍♀️ . 
-- As a user, I want to pause the winner Gabby's song. 
-
-## Technologies Used:
-
-### Languages
-
--   [Java Script](https://en.wikipedia.org/wiki/JavaScript#Trademark)
-
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)
-
--   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-
-### Frameworks, Libraries & Programs Used
-
--   [Canva](https://www.canva.com)
-     
-    - Canva was used to create the wireframes and logo.
-
--  [Font Awesome](https://fontawesome.com/icons) 
-
-    - Font Awesome icons was used in creating the content of the site.
-
--   [Google Fonts](https://fonts.google.com/)    
-
-    - The Google Fonts was used:
-
-        - [Londrina Shadow](https://fonts.google.com/specimen/Londrina+Shadow?query=londrina+shadow)
-
-        - [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans#styles)
-
-- GitHub Pages
-
-    - This project was deployed on GitHub pages.
-    
-- [Imagecolorpicker](https://imagecolorpicker.com)  
-
-   Imagecolorpicker was used to choose the colour scheme. 
-   
+- As a user, I want to pause the winner Gabby's song.
+  
 ## Design
 
 ### Colour Scheme
@@ -69,9 +33,9 @@ The colour scheme was choosen using the [Imagecolorpicker](https://imagecolorpic
 ### Wireframes
 
 - Wireframes were created in [Canva](https://www.canva.com)
-- ![Start page](assets/docs/start_game.png)
-- ![Win game](assets/docs/new_game.png)
-- ![How to play](assets/docs/how_to_play.png)
+![Start page](assets/docs/start_game.png)
+![Win game](assets/docs/new_game.png)
+![How to play](assets/docs/how_to_play.png)
 
 ## Features
 
@@ -123,6 +87,59 @@ In future plans I intend to develop:
 ### The High Score function
 - This function will check all scores rounds played and return the lowest one.
 
+## Technologies Used:
+
+### Languages
+
+-   [Java Script](https://en.wikipedia.org/wiki/JavaScript#Trademark)
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+
+### Frameworks, Libraries & Programs Used
+
+-   [Canva](https://www.canva.com)
+     
+    - Canva was used to create the wireframes and logo.
+
+-  [Font Awesome](https://fontawesome.com/icons) 
+
+    - Font Awesome icons was used in creating the content of the site.
+
+-   [Google Fonts](https://fonts.google.com/)    
+
+    - The Google Fonts was used:
+
+        - [Londrina Shadow](https://fonts.google.com/specimen/Londrina+Shadow?query=londrina+shadow)
+
+        - [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans#styles)
+
+- GitHub Pages
+
+    - This project was deployed on GitHub pages.
+    
+- [Imagecolorpicker](https://imagecolorpicker.com)  
+
+   Imagecolorpicker was used to choose the colour scheme. 
+
+## Testing
+
+### W3S Validator
+
+
+### Jigsaw Validator
+No errors were found when passing through the official Jigsaw validator:
+- [style.css](https://ksumm.github.io/gabby-dollhouse/)
+
+### JavaScript  Validator
+
+### Lighthouse
+I used Chrome Developer Tools' Lighthouse to test the Performance, Accessibility, Best practices and SEO of the website.
+![Main Page](assets/docs/lighthouse_main.png)
+![404 Page](assets/docs/lighthouse_404.png)
+   
+   
 
 ## Deployment
 
