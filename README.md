@@ -190,4 +190,18 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
+## Credits
+
+### Images 
+
+
+### Acknowlegments
+
+- I would like to thank my daughter, who is a big fun of "Gabby's Dollhouse" cartoon and asked me to make this game. She was the main tester of this game, and gave me the idea to add sound effects.
+
+- I would like to thank my Code Institute menthor, Rory Patrick Sheridan for his support and feedback throughout this portfolio project. 
+
+- I would like to thank my Code Institute tutor, Gemma Sayers for helping me with the sound function, getting me through the process and allowing me to sleep at night without the code in my head.
+
+
    
