@@ -28,7 +28,7 @@ body {
   border-radius: 0.5em;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Londrina Shadow', sans-serif;
   font-size: 4rem;
   text-transform: uppercase;
