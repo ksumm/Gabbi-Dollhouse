@@ -1,4 +1,3 @@
-
 let perfectMatch = 0;
 
 // Create tiles array
@@ -51,7 +50,8 @@ face.src = item.image;
 tile.setAttribute('name', item.name);
 
 
-//Attach the tiles to the game-container - initial code was taken from: https://www.youtube.com/watch?v=-tlb4tv4mC4 and adapted
+//Attach the tiles to the game-container - initial part of code was taken from: https://www.youtube.com/watch?v=-tlb4tv4mC4 and adapted
+
 let game = document.getElementById("game");
   game.appendChild(tile);
   tile.appendChild(face);
@@ -66,14 +66,13 @@ let game = document.getElementById("game");
   });
 };
 
-//Check Tiles Match - initial code was taken from: https://www.youtube.com/watch?v=-tlb4tv4mC4 and adapted
+//Check Tiles Match - some part of code was taken from: https://www.youtube.com/watch?v=-tlb4tv4mC4 and adapted
 
 const checkTiles = (e) => {
   const clickedTile = e.target;
   clickedTile.classList.add("flipped");
   const flippedTiles = document.querySelectorAll(".flipped");
   
-
   if(flippedTiles.length === 2){
 
     if(
@@ -90,9 +89,8 @@ const checkTiles = (e) => {
         document.getElementById('success').play(); // gets element with id 'success' and plays the audio file
       });
      
-
     } else {
-      
+
       flippedTiles.forEach((tile) => {
 
         tile.classList.remove("flipped");
@@ -158,12 +156,11 @@ document.querySelector(".lets-go").addEventListener('click', function(){
   document.querySelector(".rules-container").style.display="none";
 });
 
-//Sound Off
+//Winner.mp3 control function
 
   let winner = document.getElementById("winner");
   let isPlaying = true;
   winner.volume = 0.4;
-
 
   function togglePlay() {
     isPlaying ? winner.pause() : winner.play();
