@@ -1,7 +1,12 @@
 # Gabby's Dollhouse Memory Game 😻 🐈
+
+Gabby's Dollhouse Memory Game is a classic game for kids who are fascinated by the Dreamworks cartoon Gabby's Dollhouse. Sixteen tiles make up a total of eight pairs of multiple cartoon heroes. Using cognitive memory skills, player need to find all eight matches by turning two tiles in one moove.
+
 ## 🔗 [View the live project here.](https://ksumm.github.io/gabby-dollhouse/)
 ![Am I Responsive](assets/docs/mockup.png)
-Gabby's Dollhouse Memory Game is a classic game for kids who are fascinated by the Dreamwork cartoon Gabby's Dollhouse. Sixteen tiles make up a total of eight pairs of multiple cartoon heroes. Using cognitive memory skills, player need to find all eight matches by turning two tiles in one moove.
+
+## Responsive
+[Am I Responsive](https://ui.dev/amiresponsive) was used to check if site responsive: 
 
 ## User Stories
 
@@ -10,17 +15,17 @@ Gabby's Dollhouse Memory Game is a classic game for kids who are fascinated by t
 - As a user, I want this website to be responsive to my device.
 - As a user, I want to read the rules of the game.
 - As a user, I want to see my score.
-- As a user, I want to select hear the sound if I click on tiles.
-- As a user, I want to select hear success sound if I found matching tiles.
+- As a user, I want to hear the sound if I click on tiles.
+- As a user, I want to hear success sound if I found matching tiles.
 - As a user, I want to see the congratulations message when I win the game.
-- As a user, I would be extremly happy to hear the winner Gabby's song when I win the game 👯‍♀️ . 
+- As a user, I would be extremely happy to hear the winner Gabby's song when I win the game 👯‍♀️ . 
 - As a user, I want to pause the winner Gabby's song.
   
 ## Design
 
 ### Colour Scheme
 
-The colour scheme was choosen using the [Imagecolorpicker](https://imagecolorpicker.com) 
+The colour scheme was chosen using the [Imagecolorpicker](https://imagecolorpicker.com) 
 
 ![Color scheme](assets/docs/color-palette.png)
 
@@ -55,7 +60,7 @@ The responsive gameboard, which includes 16 cards, is filled in the shape of a s
 
 A clicking sound is playing if the tile is clicked.
 
-### Sound is playing when user found a match
+### Sound is playing when the user found a match
 
 A matching sound is playing when the user has found a match.
 
@@ -66,7 +71,7 @@ Every two tiles flipped - counted as a one move. The goal is to find mathching p
 
 ### The Reset Game button
 
-The Reset Game button is reloading the game if user for any reason wants to play a new game.
+The Reset Game button is reloading the game if the user for any reason wants to play a new game.
 ![Reset](assets/docs/reset.png)
 
 ### The Gabby's winner song OFF/ON button
@@ -74,15 +79,21 @@ The Reset Game button is reloading the game if user for any reason wants to play
 The Gabby's winner song OFF/ON button allows you to pause and resume playback the winner.mp3 audio file.
 ![Winner](assets/docs/winner_control.png)
 
+### Favicon
+
+All html pages have a favicon.
+
+![Favicon](assets/docs/favicon.png)
+
 ## Features left to implement
 
 In future plans I intend to develop:
 
 ### The Sound level control button
-- This button will allow user to control the volume level of all the sounds.
+- This button will allow the user to control the volume level of all the sounds.
 
 ### The All Sounds ON/OFF button
-- This button will allow user to fully switch the sound OFF or ON in the game.
+- This button will allow the user to fully switch the sound OFF or ON in the game.
 
 ### The High Score function
 - This function will check all scores rounds played and return the lowest one.
@@ -126,21 +137,29 @@ In future plans I intend to develop:
 ## Testing
 
 ### W3S Validator
-
+No errors were found when passing through the official W3S validator:
+- [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fksumm.github.io%2Fgabby-dollhouse%2F)
 
 ### Jigsaw Validator
 No errors were found when passing through the official Jigsaw validator:
-- [style.css](https://ksumm.github.io/gabby-dollhouse/)
+- [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fksumm.github.io%2Fgabby-dollhouse%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-### JavaScript  Validator
+### JavaScript Validator
+The code passed through JShint validator with one warning about the function and unused variable. It is because of the function called from index.html
+
+![JShint](assets/docs/jshint.png)
 
 ### Lighthouse
 I used Chrome Developer Tools' Lighthouse to test the Performance, Accessibility, Best practices and SEO of the website.
 ![Main Page](assets/docs/lighthouse_main.png)
 ![404 Page](assets/docs/lighthouse_404.png)
-   
-   
 
+## Known bugs
+
+1. The success.mp3 is not playing when the user found matching pairs one after another. In this case success.mp3 should play twice. This is due to the fact that the first audio track has not finished playing yet. To fix this bug I should make the length of the success.mp3 shorter.
+
+2. The "You Win!" message is shown on the screen after making the first moove when the second round of game is playing.
+   
 ## Deployment
 
 ### GitHub Pages
@@ -223,9 +242,9 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Acknowlegments
 
-- I would like to thank my daughter, who is a big fun of "Gabby's Dollhouse" cartoon and asked me to make this game. She was the main tester of this game, and gave me the idea to add sound effects.
+- I would like to thank my daughter, who is a big fun of "Gabby's Dollhouse" cartoon and asked me to make this game. She was the main tester of this game and gave me the idea to add sound effects.
 
-- I would like to thank my Code Institute menthor, Rory Patrick Sheridan for his support and feedback throughout this portfolio project. 
+- I would like to thank my Code Institute mentor, Rory Patrick Sheridan for his support and feedback throughout this portfolio project. 
 
 - I would like to thank my Code Institute tutor, Gemma Sayers for helping me with the sound function, getting me through the process and allowing me to sleep at night without the code in my head.
 
