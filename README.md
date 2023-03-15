@@ -27,7 +27,7 @@ Gabby's Dollhouse Memory Game is a classic game for kids who are fascinated by t
 
 The colour scheme was chosen using the [Imagecolorpicker](https://imagecolorpicker.com) 
 
-![Color scheme](assets/docs/color-palette.png)
+![Color scheme](assets/docs/color_palette.png)
 
 ### The main colors used:
 
